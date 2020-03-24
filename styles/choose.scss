@@ -22,7 +22,7 @@
     @media (max-width: 900px) {
       .nav-link {
         margin: 0px -2px;
-        padding: 6px 4px;
+        padding: 6px 3px;
       }
     }
   }
@@ -55,10 +55,10 @@
       .btn-primary {
         background: #024531;
         color: #fff;
-        padding: 3px 5px;
 
         @media (max-width: 900px) {
           padding: 6px 12px;
+          margin: 0px 5px;
         }
       }
 

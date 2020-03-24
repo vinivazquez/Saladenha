@@ -35,7 +35,7 @@
       text-align: left;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 900px) {
       .text-caption {
         line-height: 91px;
 
@@ -99,7 +99,7 @@
     background-color: #024531;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
     .text-caption {
       line-height: 45px;
       font-size: 48px;
