@@ -1,4 +1,11 @@
 #institucional {
+  background-image: url(../../assets/images/bg-institucional.jpg);
+  background-size: cover;
+
+  @media (max-width: 900px) {
+    background-position: 23% 40%;
+  }
+
   .title {
     h4 {
       font-family: brochablack;
