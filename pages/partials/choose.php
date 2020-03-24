@@ -4,8 +4,8 @@
     <br>
     <div class="pills-area d-flex justify-content-center">
         <ul class="nav">
-            <li class="nav-item">
-                <a data-toggle="pill" class="nav-link active" href="#destaques">Destaques</a>
+            <li class="active">
+                <a data-toggle="pill" class="nav-link" href="#destaques">Destaques</a>
             </li>
             <li class="nav-item">
                 <a data-toggle="pill" class="nav-link" href="#novidades">Novidades</a>
@@ -16,7 +16,7 @@
         </ul>
     </div>
     <div class="tab-content">
-        <div id="destaques" class="tab-pane fade in active">
+        <div id="destaques" class="tab-pane active">
             <div class="slider-area">
                 <div class="container text-center">
                     <div class="owl-carousel">
