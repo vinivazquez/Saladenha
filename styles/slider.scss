@@ -123,7 +123,6 @@
   .container {
     .owl-item > div {
       cursor: pointer;
-      margin: 5% 8%;
       transition: margin 0.4s ease;
 
       .btn-primary {
@@ -136,6 +135,7 @@
     }
     .owl-item:not(.center) > div {
       opacity: 0.75;
+      margin: 5% 8%;
 
       .btn-primary {
         padding: 3px;

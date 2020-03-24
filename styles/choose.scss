@@ -39,4 +39,29 @@
     background: #024531;
     color: #fff;
   }
+
+  .receita {
+    font-family: brochabook;
+    font-size: 13px;
+  }
+
+  ul {
+    padding: 0px !important;
+    > li {
+      list-style: none;
+      display: inline-block;
+      margin: 0px 4px;
+
+      .btn-primary {
+        background: #024531;
+        color: #fff;
+        padding: 3px 5px;
+      }
+
+      p {
+        font-size: 14px;
+        margin: 0px !important;
+      }
+    }
+  }
 }
