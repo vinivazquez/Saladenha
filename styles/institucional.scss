@@ -1,0 +1,48 @@
+#institucional {
+  .title {
+    h4 {
+      font-family: brochablack;
+      font-size: 30px;
+      color: #024531;
+      margin-top: 40px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .block-img,
+    .text-area {
+      margin: 100px 0;
+    }
+
+    p {
+      font-family: brochabook;
+      color: #024531;
+      padding-right: 27%;
+      text-align: justify;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .block-img,
+    .text-area {
+      margin: 50px 0px;
+      text-align: center;
+    }
+  }
+
+  .text-area {
+    h4 {
+      color: #024531;
+      font-family: brochablack;
+    }
+
+    .btn-primary {
+      background: transparent;
+      border-color: #024531;
+      color: #024531;
+      font-family: brochablack;
+      border-radius: 50px;
+      padding: 8px 25px;
+    }
+  }
+}

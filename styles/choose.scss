@@ -1,0 +1,42 @@
+#choose-product {
+  h3 {
+    font-family: brochablack;
+    color: #024531;
+  }
+
+  .pills-area {
+    .nav-link {
+      background: transparent;
+      border: 2px solid #336f5b;
+      margin: 0px 15px;
+      font-family: brochablack;
+      border-radius: 50px;
+      color: #024531;
+    }
+
+    .nav-link.active {
+      background: #336f5b;
+      color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .nav-link {
+        margin: 0px 5px;
+        padding: 5px;
+      }
+    }
+  }
+
+  .btn-primary {
+    background: transparent;
+    color: #024531;
+    font-family: brochablack;
+    border-radius: 50px;
+    border-color: #024531;
+  }
+
+  .product {
+    background: #024531;
+    color: #fff;
+  }
+}

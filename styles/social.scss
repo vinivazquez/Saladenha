@@ -1,0 +1,45 @@
+@media (min-width: 1200px) {
+  .sidebar-social {
+    position: fixed;
+    width: 45px;
+    top: 0;
+    right: 0;
+    bottom: 20px;
+    top: 40%;
+    display: table;
+    z-index: 2;
+
+    a {
+      color: #fff;
+      font-size: 20px;
+      border-radius: 100%;
+    }
+
+    .wpp {
+      font-size: 35px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      list-style: none;
+
+      > li {
+        margin: 10px 0;
+        background-color: #024531;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+      }
+
+      .social-one {
+        padding: 9px;
+      }
+
+      .social-two {
+        padding: 2px;
+      }
+    }
+  }
+}

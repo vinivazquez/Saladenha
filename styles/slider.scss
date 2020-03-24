@@ -1,0 +1,157 @@
+/* SLIDER INTRO*/
+#slider-intro {
+  /* carousel fullscreen */
+  .carousel-fullscreen .carousel-inner .carousel-item {
+    height: 100vh;
+    min-height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width: 900px) {
+      height: 124vh;
+    }
+  }
+
+  /* carousel fullscreen - vertically centered caption*/
+  .carousel-fullscreen .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    color: #024531;
+    font-family: brochablack;
+    margin-top: 15px;
+
+    p {
+      margin-bottom: 0px;
+    }
+
+    .btn-primary {
+      background-color: #336f5b;
+      border-radius: 50px;
+      border-color: #336f5b;
+      font-size: 29px;
+      padding: 10px 40px;
+      text-align: left;
+    }
+
+    @media (min-width: 1200px) {
+      .text-caption {
+        line-height: 91px;
+
+        .one {
+          font-size: 3.5rem;
+          margin-left: 23px;
+          text-align: left;
+        }
+
+        .two {
+          font-size: 8rem;
+          margin-top: -25px;
+          text-align: left;
+        }
+
+        .three {
+          font-size: 3.5rem;
+          margin-left: 200px;
+          text-align: left;
+        }
+      }
+
+      .product-description {
+        font-size: 29px;
+        text-align: left;
+        margin-left: 35px;
+      }
+
+      .btn-slider {
+        text-align: left;
+
+        .btn-primary {
+          background-color: #336f5b;
+          border-radius: 50px;
+          border-color: #336f5b;
+          font-size: 29px;
+          padding: 10px 40px;
+          text-align: left;
+          margin-left: 35px;
+        }
+      }
+    }
+  }
+
+  .carousel .carousel-item {
+    transition-duration: 1.5s;
+  }
+
+  .carousel-indicators {
+    > li {
+      background-color: #6d9682;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .carousel-indicators .active {
+    background-color: #024531;
+  }
+
+  @media (max-width: 900px) {
+    .text-caption {
+      line-height: 45px;
+      font-size: 48px;
+    }
+
+    .product-description {
+      font-size: 20px;
+    }
+
+    .btn-primary {
+      font-size: 23px !important;
+      padding: 10px 40px !important;
+    }
+  }
+}
+
+/* SLIDER MIDDLE */
+.slider-area {
+  margin: 60px 0px;
+
+  .container {
+    .owl-item > div {
+      cursor: pointer;
+      margin: 5% 8%;
+      transition: margin 0.4s ease;
+
+      .btn-primary {
+        padding: 10px;
+      }
+    }
+    .owl-item.center > div {
+      cursor: auto;
+      margin: 0;
+    }
+    .owl-item:not(.center) > div {
+      opacity: 0.75;
+
+      .btn-primary {
+        padding: 3px;
+      }
+    }
+
+    p {
+      margin-top: 20px;
+      font-family: brochablack;
+      color: #024531;
+      font-size: 20px;
+    }
+
+    small {
+      font-family: brochablack;
+      color: #024531;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+#parallax {
+  background-image: url(../../assets/images/banner-parallax.jpg);
+
+  /* Set a specific height */
+  min-height: 300px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .title-intro {
+    h4 {
+      color: #fff;
+      font-family: brochablack;
+      padding: 100px 30px;
+      font-size: 35px;
+    }
+  }
+}

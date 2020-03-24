@@ -1,0 +1,53 @@
+#location {
+  background: #024531;
+  height: 969px;
+  background-size: cover;
+  font-family: brochablack;
+
+  .fa-map-marker-alt {
+    font-size: 6rem;
+    color: #fff;
+    margin-top: 15%;
+  }
+
+  .select-area {
+    margin-top: 50px;
+
+    .form-control {
+      border-radius: 50px;
+      height: 48px;
+      background: transparent;
+      color: #fff;
+      font-size: 20px;
+
+      > option {
+        color: #024531;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      padding: 0px 33%;
+    }
+  }
+
+  .btn-area {
+    margin-top: 5%;
+
+    .btn-primary {
+      color: #024531;
+      background: #fff;
+      font-weight: bold;
+      border-radius: 50px;
+      border-color: #fff;
+      font-size: 20px;
+
+      @media (min-width: 1200px) {
+        padding: 10px 149px;
+      }
+    }
+  }
+
+  .logo-intro {
+    margin-top: 15%;
+  }
+}
