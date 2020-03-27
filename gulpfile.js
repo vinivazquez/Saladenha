@@ -28,8 +28,8 @@ function gulpJS() {
         'node_modules/@popperjs/core/dist/umd/popper.min.js',
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js',
-        'scripts/owl.carousel.min.js',
-        'scripts/slide.js',
+        'scripts/tabs.js',
+        'scripts/slick.js',
 
     ])
 
