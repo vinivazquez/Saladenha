@@ -1,28 +1,32 @@
 #choose-product {
-  h3 {
-    font-family: brochablack;
-    color: #024531;
-  }
+  .intro-tabs {
+    margin: 30px 0px;
 
-  .pills-area {
-    .nav-link {
-      background: transparent;
-      border: 2px solid #336f5b;
-      margin: 0px 15px;
+    h3 {
       font-family: brochablack;
-      border-radius: 50px;
       color: #024531;
+      margin: 30px 0;
     }
 
-    .nav-link.active {
-      background: #336f5b;
-      color: #fff;
-    }
+    .nav-tabs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 0px;
 
-    @media (max-width: 900px) {
-      .nav-link {
-        margin: 0px -2px;
-        padding: 6px 3px;
+      > li {
+        .active {
+          background: #024531 !important;
+          color: #fff;
+        }
+
+        a {
+          padding: 10px 40px;
+          border-radius: 50px;
+          font-family: brochablack;
+          background: transparent;
+          color: #024531;
+        }
       }
     }
   }
@@ -38,11 +42,6 @@
   .product {
     background: #024531;
     color: #fff;
-  }
-
-  .receita {
-    font-family: brochabook;
-    font-size: 13px;
   }
 
   ul {

@@ -117,41 +117,121 @@
 }
 
 /* SLIDER MIDDLE */
-.slider-area {
-  margin: 60px 0px;
 
-  .container {
-    .owl-item > div {
-      cursor: pointer;
-      transition: margin 0.4s ease;
+.container-fluid {
+  margin-bottom: 75px;
 
-      .btn-primary {
-        padding: 10px;
-      }
+  .slick .slider-cardapio {
+    display: block;
+
+    text-align: center;
+    transform: translate(0, 0) scale(0.4);
+    transition: all 0.4s ease;
+    opacity: 0.5;
+  }
+
+  .slick-slide.lt2 .slider-cardapio {
+    transform: translate(10%, 0) scale(0.6);
+  }
+  .slick-slide.lt1 .slider-cardapio {
+    opacity: 1;
+    transform: translate(5%, 0) scale(0.8);
+  }
+  .slick-slide.gt1 .slider-cardapio {
+    opacity: 1;
+    transform: translate(-5%, 0) scale(0.8);
+  }
+  .slick-slide.gt2 .slider-cardapio {
+    transform: translate(-10%, 0) scale(0.6);
+  }
+  .slick-slide.slick-center .slider-cardapio {
+    z-index: 1;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    appearance: none;
+    margin-top: -10px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 100;
+  }
+
+  .slick-prev {
+    width: 40px;
+    height: 40px;
+    background-image: url(../../assets/images/seta-prev.png);
+    background-repeat: no-repeat;
+
+    @media (min-width: 1200px) {
+      left: 20%;
     }
-    .owl-item.center > div {
-      cursor: auto;
-      margin: 0;
-    }
-    .owl-item:not(.center) > div {
-      opacity: 0.75;
-      margin: 5% 8%;
 
-      .btn-primary {
-        padding: 3px;
-      }
+    @media (max-width: 900px) {
+      left: 10%;
     }
 
+    &:before {
+      content: "";
+    }
+
+    &:hover {
+      background-image: url(../../assets/images/seta-prev.png);
+      background-repeat: no-repeat;
+    }
+  }
+  .slick-next {
+    width: 40px;
+    height: 40px;
+    background-image: url(../../assets/images/seta-next.png);
+    background-repeat: no-repeat;
+
+    @media (min-width: 1200px) {
+      right: 20%;
+    }
+
+    @media (max-width: 900px) {
+      right: 10%;
+    }
+
+    &:before {
+      content: "";
+    }
+
+    &:hover {
+      background-image: url(../../assets/images/seta-next.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .slider-cardapio {
     p {
-      margin-top: 20px;
-      font-family: brochablack;
       color: #024531;
-      font-size: 20px;
+      font-weight: bold;
+      font-family: brochablack;
+      margin-top: 25px;
+      font-size: 25px;
+      margin: 0px;
     }
 
-    small {
-      font-family: brochablack;
+    .receita {
       color: #024531;
+      font-size: 15px;
+      font-family: brochabook;
+      padding: 0px 30px;
+      margin-top: 5px;
+    }
+
+    .btn-primary {
+      padding: 6px 23px;
+      margin: 0px 5px;
     }
   }
 }
