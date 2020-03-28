@@ -1,28 +1,43 @@
 <div class="intro-tabs">
     <div class="container p-4">
+        <br>
         <h3 class="text-center">Escolha o seu</h3>
-        <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-            <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-            <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-        </ul>
+        <br>
+        <div class="pills-area d-flex justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a data-toggle="pill" class="nav-link active" href="#destaques">Destaques</a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="pill" class="nav-link" href="#novidades">Novidades</a>
+                </li>
+                <li class="nav-item">
+                    <a data-toggle="pill" class="nav-link" href="#veganos">Veganos</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 
 <div class="tab-content">
-    <div id="home" class="tab-pane active">
+    <div id="destaque" class="tab-pane active">
         <?php require('slide1.php') ?>
     </div>
 
 
 
-    <div id="menu1" class="tab-pane fade">
+    <div id="novidades" class="tab-pane fade">
         <?php require('slide2.php') ?>
     </div>
 
 
 
-    <div id="menu2" class="tab-pane fade">
+    <div id="veganos" class="tab-pane fade">
         <?php require('slide3.php') ?>
     </div>
 </div>
+
+<div class="btn-area text-center">
+    <a class="btn btn-primary" href="#" role="button">Cardápio Completo <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</div>
+<br><br><br>
