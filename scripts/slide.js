@@ -58,3 +58,5 @@ $('.slick')
         console.log('beforeChange', current, ':', lt2, lt1, next, gt1, gt2);
 
     });
+
+
