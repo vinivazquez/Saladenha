@@ -37,9 +37,34 @@ header {
   .nav-link {
     color: #024531;
     font-family: brochablack;
+    margin: 15px;
+
+    img {
+      margin-right: 15px;
+    }
   }
+}
+
+.modal-content {
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .modal-header {
   border-bottom: 0px;
+}
+
+.close {
+  font-size: 2.5rem;
+  padding: 0px !important;
+  margin: 0rem 1rem 0rem auto !important;
+  color: #024531;
+}
+
+hr {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
 }

@@ -8,26 +8,36 @@
       margin: 30px 0;
     }
 
-    .nav-tabs {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-bottom: 0px;
+    .pills-area {
+      .nav-link {
+        background: transparent;
+        border: 2px solid #336f5b;
+        margin: 0px 15px;
+        font-family: brochablack;
+        border-radius: 50px;
+        color: #024531;
+      }
 
-      > li {
-        .active {
-          background: #024531 !important;
-          color: #fff;
-        }
+      .nav-link.active {
+        background: #336f5b;
+        color: #fff;
+      }
 
-        a {
-          padding: 10px 40px;
-          border-radius: 50px;
-          font-family: brochablack;
-          background: transparent;
-          color: #024531;
+      @media (max-width: 900px) {
+        .nav-link {
+          margin: 0px 5px;
+          padding: 5px;
         }
       }
+    }
+  }
+
+  ul {
+    padding: 0px !important;
+
+    > li {
+      list-style: none;
+      display: inline-block;
     }
   }
 
@@ -42,29 +52,5 @@
   .product {
     background: #024531;
     color: #fff;
-  }
-
-  ul {
-    padding: 0px !important;
-    > li {
-      list-style: none;
-      display: inline-block;
-      margin: 0px 5px;
-
-      .btn-primary {
-        background: #024531;
-        color: #fff;
-
-        @media (max-width: 900px) {
-          padding: 6px 12px;
-          margin: 0px 5px;
-        }
-      }
-
-      p {
-        font-size: 14px;
-        margin: 0px !important;
-      }
-    }
   }
 }
