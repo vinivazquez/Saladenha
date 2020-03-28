@@ -30,7 +30,6 @@
 
     <!-- JS -->
     <script src="assets/js/main.js" type="text/javascript"></script>
-    <script src="assets/js/slick.js"></script>
     <script src="scripts/slide.js"></script>
 </body>
 
