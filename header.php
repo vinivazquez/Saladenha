@@ -36,26 +36,29 @@
 </header>
 
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <p>X</p>
                 </button>
             </div>
             <div class="modal-body">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Ínicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#"><img src="assets/images/mobile-icon1.png" alt=""> Ínicio </a>
+                        <hr>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cardápio</a>
+                        <a class="nav-link" href="#"><img src="assets/images/mobile-icon2.png" alt=""> Cardápio</a>
+                        <hr>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Institucional</a>
+                        <a class="nav-link" href="#"><img src="assets/images/mobile-icon3.png" alt=""> Institucional</a>
+                        <hr>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="#"><img src="assets/images/mobile-icon4.png" alt=""> Contato</a>
                     </li>
                 </ul>
             </div>
