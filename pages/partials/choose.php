@@ -20,7 +20,7 @@
 </div>
 
 <div class="tab-content">
-    <div id="destaque" class="tab-pane active">
+    <div id="destaques" class="tab-pane active">
         <?php require('slide1.php') ?>
     </div>
 
