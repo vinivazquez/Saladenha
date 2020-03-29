@@ -1,3 +1,4 @@
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-    $('.slick').slick('setPosition');
-})
+$(".nav-link").click(function () {
+    $('.center').slick('refresh');
+    $('.center').slick('slickGoTo', 0);
+});
