@@ -118,34 +118,8 @@
 
 /* SLIDER MIDDLE */
 
-.container-fluid {
-  margin-bottom: 75px;
-
-  .slick .slider-cardapio {
-    display: block;
-    text-align: center;
-    transform: translate(0, 0);
-    transition: all 0.4s ease;
-  }
-
-  .slick-slide.slick-center .slider-cardapio {
-    opacity: 1;
-    transition: all 0.4s ease;
-  }
-
-  .slick-prev,
-  .slick-next {
-    position: absolute;
-    top: 50%;
-    appearance: none;
-    margin-top: -10px;
-    padding: 0;
-    border: 0;
-    background: none;
-    cursor: pointer;
-    outline: none;
-    z-index: 100;
-  }
+.slider {
+  text-align: center;
 
   .slick-prev {
     width: 40px;
@@ -193,42 +167,80 @@
       background-repeat: no-repeat;
     }
   }
+}
 
-  .slider-cardapio {
-    p {
-      color: #024531;
-      font-weight: bold;
-      font-family: brochablack;
-      margin-top: 25px;
-      font-size: 25px;
-      margin: 0px;
-    }
+.slick-track {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
 
-    .receita {
-      color: #024531;
-      font-size: 15px;
-      font-family: brochabook;
-      padding: 0px 30px;
-      margin-top: 5px;
-    }
+.slick-slide {
+  margin: 0px 10px;
+  display: flex !important;
+  align-items: center;
+}
 
-    .btn-primary {
-      padding: 6px 23px;
-      margin: 0px 5px;
-      background: #024531 !important;
-      color: #fff !important;
-    }
+.slick-list.draggable {
+  padding: 0 !important;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+}
+
+.slick-slide.activedLeft div {
+  width: 100% !important;
+  opacity: 0.75 !important;
+  transform: scale(0.8);
+}
+
+.slick-slide.activedRight div {
+  width: 100% !important;
+  opacity: 0.75 !important;
+  transform: scale(0.8);
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  appearance: none;
+  margin-top: -10px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 100;
+}
+
+.slider-cardapio {
+  p {
+    color: #024531;
+    font-weight: bold;
+    font-family: brochablack;
+    margin-top: 25px;
+    font-size: 25px;
+    margin: 0px;
   }
 
-  .slick-center {
-    opacity: 1 !important;
-    transform: scale(1) !important;
-    transition: all 0.4s ease;
+  .receita {
+    color: #024531;
+    font-size: 15px;
+    font-family: brochabook;
+    padding: 0px 30px;
+    margin-top: 5px;
   }
 
-  .slick-cloned,
-  .slick-active {
-    opacity: 0.5;
-    transition: all 0.4s ease;
+  .btn-primary {
+    padding: 6px 23px;
+    margin: 0px 5px;
+    background: #024531 !important;
+    color: #fff !important;
   }
 }
