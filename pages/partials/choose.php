@@ -23,21 +23,7 @@
     <div id="destaques" class="tab-pane active">
         <?php require('slide1.php') ?>
     </div>
-
-
-
-    <div id="novidades" class="tab-pane fade">
-        <?php require('slide2.php') ?>
-    </div>
-
-
-
-    <div id="veganos" class="tab-pane fade">
-        <?php require('slide3.php') ?>
-    </div>
 </div>
-
-
 
 <div class="btn-area text-center">
     <a class="btn btn-primary" href="#" role="button">Cardápio Completo <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
