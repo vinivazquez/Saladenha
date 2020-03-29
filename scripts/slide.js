@@ -1,4 +1,3 @@
-
 $('.slick').slick({
     centerMode: true,
     slidesToShow: 5,
@@ -23,8 +22,11 @@ $('.slick').slick({
             }
         }
     ]
-}).on('beforeChange', function (event, slick, currentSlide, nextSlide) {
-    $(this).find('.slick-slide[data-slick-index="' + nextSlide + '"]').addClass('fuckyou');
-    $(this).find('.slick-slide[data-slick-index="' + currentSlide + '"]').removeClass('fuckyou');
+
+}).on('init', () => {
+    $(this).find('.slick-slide[data-slick-index="-2"]').addClass('lt2');
+    $(this).find('.slick-slide[data-slick-index="-1"]').addClass('lt1');
+    $(this).find('.slick-slide[data-slick-index="1"]').addClass('gt1');
+    $(this).find('.slick-slide[data-slick-index="2"]').addClass('gt2');
 });
-3
+
