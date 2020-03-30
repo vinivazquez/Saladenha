@@ -1,51 +1,74 @@
-$(".center").slick({
-    centerMode: true,
-    slidesToShow: 5,
-    slidesToScroll: 3,
-    arrows: true,
-    centerPadding: '0px',
-    responsive: [
-        {
-            breakpoint: 1000,
-            settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 1
+$('.slick')
+    .on('init', () => {
+        $('.slick-slide[data-slick-index="-2"]').addClass('lt2');
+        $('.slick-slide[data-slick-index="-1"]').addClass('lt1');
+        $('.slick-slide[data-slick-index="1"]').addClass('gt1');
+        $('.slick-slide[data-slick-index="2"]').addClass('gt2');
+    })
+    .slick({
+        centerMode: true,
+        centerPadding: 0,
+        slidesToShow: 5,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
             }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                arrows: true,
-                centerMode: true,
-                centerPadding: '0px',
-                slidesToShow: 1
-            }
+        ]
+    }).on('beforeChange', (event, slick, current, next) => {
+        $('.slick-slide.gt2').removeClass('gt2');
+        $('.slick-slide.gt1').removeClass('gt1');
+        $('.slick-slide.lt1').removeClass('lt1');
+        $('.slick-slide.lt2').removeClass('lt2');
+
+        const lt2 = (current < next && current > 0) ? current - 1 : next - 2;
+        const lt1 = (current < next && current > 0) ? current : next - 1;
+        const gt1 = (current < next || next === 0) ? next + 1 : current;
+        const gt2 = (current < next || next === 0) ? next + 2 : current + 1;
+
+        $(`.slick-slide[data-slick-index="${lt2}"]`).addClass('lt2');
+        $(`.slick-slide[data-slick-index="${lt1}"]`).addClass('lt1');
+        $(`.slick-slide[data-slick-index="${gt1}"]`).addClass('gt1');
+        $(`.slick-slide[data-slick-index="${gt2}"]`).addClass('gt2');
+
+        // Clone processing when moving from 5 to 0
+        if (current === 5 && next === 0) {
+            $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass('lt2');
+            $(`.slick-slide[data-slick-index="${current}"]`).addClass('lt1');
+            $(`.slick-slide[data-slick-index="${current + 2}"]`).addClass('gt1');
+            $(`.slick-slide[data-slick-index="${current + 3}"]`).addClass('gt2');
         }
-    ]
-});
 
-function divImg(num, classe) {
-    const result = $('.slick-center').attr('data-slick-index') - num;
-    const numImg = result == -3 ? 6 : result == 1 ? 10 : result;
-    $('.slick-slide').removeClass(classe);
-    $('.slick-slide[data-slick-index="' + numImg + '"]').addClass(classe);
-}
+        // Clone processing when moving from 0 to 5
+        if (current === 0 && next === 5) {
+            $(`.slick-slide[data-slick-index="${current - 1}"]`).addClass('gt2');
+            $(`.slick-slide[data-slick-index="${current}"]`).addClass('gt1');
+            $(`.slick-slide[data-slick-index="${current - 2}"]`).addClass('lt1');
+            $(`.slick-slide[data-slick-index="${current - 3}"]`).addClass('lt2');
+        }
 
-divImg(2, 'activedLeft');
-divImg(-2, 'activedRight');
-
-$('body').click(function () {
-    divImg(2, 'activedLeft');
-    divImg(-2, 'activedRight');
-})
+        console.log('beforeChange', current, ':', lt2, lt1, next, gt1, gt2);
+    });
